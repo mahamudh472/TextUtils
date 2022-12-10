@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Analyzer - TextUtils</title>
+    <style>
+        .result{
+            font-family: monospace;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .title{
+            font-size: 25px;
+            font-weight: 900;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .card{
+            min-height: 200px;
+            top: 20px;
+            width: 50%;
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid silver ;
+        }
+        .bottom{
+            position: absolute;
+            bottom: 2px;
+            right: 5px;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">
+            Your text is analyzed - {{purpuse}}
+        </div>
+        <div class="result">
+            {{text}}
+        </div>
+        <div class="bottom">
+            TextUtils
+        </div>
+    </div>
+</body>
+</html>
